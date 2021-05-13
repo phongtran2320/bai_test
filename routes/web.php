@@ -26,6 +26,10 @@ Route::get('hello/{name}',function($name){
     return "hello ".$name;
 });
 
+Route::get('goodbye/{name}',function($name){
+    return "goodbye ".$name;
+});
+
 Route::get('test/{name}','TestController@name')->name('test');
 
 
