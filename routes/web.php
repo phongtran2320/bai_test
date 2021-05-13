@@ -13,6 +13,11 @@
 
 use App\Http\Controllers\TestController;
 
+Route::get('form','TestController@form')->name('form');
+
+Route::post('post','TestController@post')->name('post');
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -31,3 +36,4 @@ Route::prefix('admin')->group(function () {
 
     Route::get('g3','TestController@c')->name('c');
 });
+

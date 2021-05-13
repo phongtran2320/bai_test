@@ -27,4 +27,18 @@ class TestController extends Controller
     public function b($name){
         return \Redirect::route('test', $name);
     }
+    
+
+    public function form(){
+        
+        return view("form");
+    }
+    public function post(Request $rq){
+        
+        $name=$rq->post('name');
+
+        return view('post',['name'=> $name]);
+    }
+
+
 }
