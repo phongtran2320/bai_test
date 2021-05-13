@@ -30,7 +30,7 @@ Route::get('goodbye/{name}',function($name){
     return "goodbye ".$name;
 });
 
-Route::get('test/{name}','TestController@name')->name('test');
+
 
 
 Route::prefix('admin')->group(function () {
@@ -38,7 +38,7 @@ Route::prefix('admin')->group(function () {
 
     Route::get('g2/{name}','TestController@b')->name('b');
 
-    Route::get('g3','TestController@c')->name('c');
+    
     
    
 
