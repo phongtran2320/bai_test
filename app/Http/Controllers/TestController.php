@@ -27,7 +27,9 @@ class TestController extends Controller
     public function b($name){
         return \Redirect::route('test', $name);
     }
-    
+    public function d(){
+        return "blbaaadkndsk ";
+    }
 
     public function form(){
         
