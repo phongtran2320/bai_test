@@ -42,6 +42,6 @@ Route::prefix('admin')->group(function () {
     
    
 
-     Route::get('g5','TestController@e')->name('e');
+    
 });
 
