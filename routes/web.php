@@ -30,4 +30,6 @@ Route::prefix('admin')->group(function () {
     Route::get('g2/{name}','TestController@b')->name('b');
 
     Route::get('g3','TestController@c')->name('c');
+    
+     Route::get('g4','TestController@d')->name('d');
 });
